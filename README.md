@@ -40,6 +40,9 @@ Gra inspirowana częścią DLC z Resident Evil 7 o nazwie Banned Footage vol.2 w
 ## Informacje techniczne
 Projekt korzysta z zewnętrznej biblioteki <a href="https://github.com/SFML/SFML" target="_blank">SFML</a> która jest zlinkowana statycznie wraz ze wszystkimi funkcjami i klasami z biblioteki standardowej rownież zlinkowanymi statycznie. Jeżeli chcesz skompilować projekt u siebie używając kompilatora MSVC, będziesz musiał skompilować na nowo bibliotekę sfml wraz z opcją "biblioteka środowiska uruchomieniowego: wielowątkowa (MT)" dla każdej potrzebnej biblioteki a następnie w Visual Studio w ustawienia projektu ustawić odpowiednie ścieżki do plików nagłówkowych oraz bibliotek statycznych. W przypadku kompilacji z innym kompilatorem, należy zmienić też dodatkowe atrybuty funckji z __forceinline na inny w zależności od kompilatora, który będzie również wymuszać inlinowanie funkcji (bądź wogóle niewymuszać inlinowania tych funkcji).
 
+### Hierarchia katalogów w projekcie
+<img src="zdjecia dla readme/hierarchia%20katalogow.png">
+
 ## Zasoby
 - Grafika do wszystkich kart wykonana przeze mnie.
 - Muzyka w tle pochodzi z epki zespołu <a href="https://open.spotify.com/artist/6Go3NbvoYrjs74biJvpPqd" target="_blank">septemberistheonlytimeidontthinkofyou</a>.
