@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{bb27b5aa-c713-4e65-9158-fb07160cdba9}</ProjectGuid>
+    <RootNamespace>My21gra</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>SFML_STATIC;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\SFML-3.0.0-MT\SFML-master\include;</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\SFML-3.0.0-MT\build\lib\Debug</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-graphics-s-d.lib;sfml-window-s-d.lib;sfml-system-s-d.lib;opengl32.lib;freetyped.lib;winmm.lib;gdi32.lib;sfml-audio-s-d.lib;flacd.lib;vorbisencd.lib;vorbisfiled.lib;vorbisd.lib;oggd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>SFML_STATIC;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\SFML-3.0.0-MT\SFML-master\include;</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\SFML-3.0.0-MT\build\lib\Release</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-graphics-s.lib;sfml-window-s.lib;sfml-system-s.lib;opengl32.lib;freetype.lib;winmm.lib;gdi32.lib;sfml-audio-s.lib;flac.lib;vorbisenc.lib;vorbisfile.lib;vorbis.lib;ogg.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Audio.cpp" />
+    <ClCompile Include="Gra.cpp" />
+    <ClCompile Include="klasy\Gracz.cpp" />
+    <ClCompile Include="klasy\GraficznaReprezentacjaKarty.cpp" />
+    <ClCompile Include="klasy\Karta.cpp" />
+    <ClCompile Include="klasy\KartaSpecjalna.cpp" />
+    <ClCompile Include="klasy\RenderowanieRozgrywki.cpp" />
+    <ClCompile Include="klasy\Rozgrywka.cpp" />
+    <ClCompile Include="Lobby.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="OknoGry.cpp" />
+    <ClCompile Include="Ustawienia.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Audio.hpp" />
+    <ClInclude Include="klasy\Karta.hpp" />
+    <ClInclude Include="klasy\GraficznaReprezentacjaKarty.hpp" />
+    <ClInclude Include="klasy\KartaSpecjalna.hpp" />
+    <ClInclude Include="klasy\Gracz.hpp" />
+    <ClInclude Include="klasy\Rozgrywka.hpp" />
+    <ClInclude Include="OknoGry.hpp" />
+    <ClInclude Include="klasy\RenderowanieRozgrywki.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="resources\czcionki\czcionka.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="resources\muzyka w tle\1.mp3" />
+    <Media Include="resources\muzyka w tle\2.mp3" />
+    <Media Include="resources\muzyka w tle\3.mp3" />
+    <Media Include="resources\muzyka w tle\4.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="resources\karty\1.png" />
+    <Image Include="resources\karty\10.png" />
+    <Image Include="resources\karty\11.png" />
+    <Image Include="resources\karty\2.png" />
+    <Image Include="resources\karty\3.png" />
+    <Image Include="resources\karty\4.png" />
+    <Image Include="resources\karty\5.png" />
+    <Image Include="resources\karty\6.png" />
+    <Image Include="resources\karty\7.png" />
+    <Image Include="resources\karty\8.png" />
+    <Image Include="resources\karty\9.png" />
+    <Image Include="resources\karty\dobierz idealna karte i zwieksz atak o 5.png" />
+    <Image Include="resources\karty\dobierz idealna karte.png" />
+    <Image Include="resources\karty\dobierz karte o wartosci 2.png" />
+    <Image Include="resources\karty\dobierz karte o wartosci 3.png" />
+    <Image Include="resources\karty\dobierz karte o wartosci 4.png" />
+    <Image Include="resources\karty\dobierz karte o wartosci 5.png" />
+    <Image Include="resources\karty\dobierz karte o wartosci 6.png" />
+    <Image Include="resources\karty\dobierz karte o wartosci 7.png" />
+    <Image Include="resources\karty\odrzuc ostatnia wylosowana karte.png" />
+    <Image Include="resources\karty\ukryta karta.png" />
+    <Image Include="resources\karty\usun karty specjalne przeciwnika ze stolu.png" />
+    <Image Include="resources\karty\zamien sie ostatnia wylosowana karta z graczem.png" />
+    <Image Include="resources\karty\zmien limit wyniku na 17.png" />
+    <Image Include="resources\karty\zmien limit wyniku na 24.png" />
+    <Image Include="resources\karty\zmien limit wyniku na 27.png" />
+    <Image Include="resources\karty\zmniejsz atak przeciwnika o 1.png" />
+    <Image Include="resources\karty\zmniejsz atak przeciwnika o 2.png" />
+    <Image Include="resources\karty\zwieksz atak o 1.png" />
+    <Image Include="resources\karty\zwieksz atak o 2.png" />
+    <Image Include="resources\symbole\atak.png" />
+    <Image Include="resources\symbole\poziom zdrowia.png" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
