@@ -44,6 +44,6 @@ Projekt korzysta z zewnętrznej biblioteki <a href="https://github.com/SFML/SFML
 <img src="zdjecia dla readme/hierarchia%20katalogow.png">
 
 ## Zasoby
-- Grafika do wszystkich kart wykonana przeze mnie.
+- Grafika wykonana przeze mnie.
 - Muzyka w tle pochodzi z epki zespołu <a href="https://open.spotify.com/artist/6Go3NbvoYrjs74biJvpPqd" target="_blank">septemberistheonlytimeidontthinkofyou</a>.
 - Czcionka autorstwa Riciery Leal ze strony <a href="https://www.dafont.com/vcr-osd-mono.font" target="_blank">dafont</a>.
