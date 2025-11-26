@@ -1,5 +1,5 @@
 # 21
-Gra inspirowana częścią DLC z Resident Evil 7 o nazwie Banned Footage vol.2 w którym znajduje się gra karciana 21.
+Gra jest odwzorowaniem części DLC z Resident Evil 7 o nazwie Banned Footage vol.2 w którym znajduje się gra karciana 21.
 
 - Aby rozpocząć grę należy w lobby kliknąć przycisk rozpocznij.
 <img src="zdjecia dla readme/lobby.png" height="320">
